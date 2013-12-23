@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Viewport Dimensions",
   "description": "This extension displays Chrome’s viewport dimensions when resizing the browser window.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "background": {
     "persistent": false,
     "scripts": ["js/jquery.js"]
@@ -17,11 +17,5 @@
       "js": ["js/jquery.js","js/scripts.js"],
       "run_at": "document_end"
     }
-  ],
-  "permissions":[
-    "contextMenus", 
-    "tabs",
-    "http://*/*",
-    "https://*/*"
   ]
 }
