@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Viewport Size",
+  "description": "This extension displays Chrome’s viewport size.",
+  "version": "0.0.1",
+  "background": {
+    "persistent": false,
+    "scripts": ["jquery.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "css": ["css/styles.css"],
+      "js": ["js/jquery.js","js/scripts.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions":[
+    "contextMenus", 
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
