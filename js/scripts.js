@@ -1,12 +1,26 @@
-$('body').append('<div id="viewPort"></div>');
-$('#viewPort').hide();
-function showViewportSize(){
-  var the_width = $(window).width();
-  var the_height = $(window).height();
-  $('#viewPort').text(the_width + ' x ' + the_height).fadeIn('fast', function() {
-    $(this).delay(3000).fadeOut();
-  });
+/*
+A BIG Thanks to CrocoDillon for the help with this script.
+*/
+var $window = $(window),
+    viewport = $('<div id="viewPort"></div>').hide(),
+    visible = false,
+    timer;
+
+$('body').append(viewport);
+
+function showViewportSize() {
+  viewport.text($window.width() + ' x ' + $window.height());
+
+  if (!visible) {
+    viewport.fadeIn();
+    visible = true;
+  }
+
+  clearTimeout(timer);
+  timer = setTimeout(function() {
+    viewport.fadeOut();
+    visible = false;
+  }, 1000);
 }
-$(window).resize(function(e){
-   showViewportSize();
-});
+
+$window.resize(showViewportSize);
