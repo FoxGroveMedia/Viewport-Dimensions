@@ -7,6 +7,9 @@
     "persistent": false,
     "scripts": ["js/jquery.js"]
   },
+  "icons": {
+    "128": "img/icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["http://*/*","https://*/*"],
