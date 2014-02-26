@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Viewport Dimensions",
   "description": "This extension displays Chrome’s viewport dimensions when resizing the browser window.",
   "version": "0.0.3",
