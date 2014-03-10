@@ -12,7 +12,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*","https://*/*","http://localhost/*","https://localhost/*","http://127.0.0.1/*"],
+      "matches": ["http://*/*","https://*/*","http://localhost/*","https://localhost/*","http://127.0.0.1/*","file:///*/*"],
       "css": ["css/styles.css"],
       "js": ["js/jquery-1.11.0.min.js","js/jquery-1.11.0.min.map","js/scripts.js"],
       "run_at": "document_end"
