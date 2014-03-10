@@ -9,7 +9,7 @@ var $window = $(window),
 $('body').append(viewport);
 
 function showViewportSize() {
-  viewport.text($window.width() + ' x ' + $window.height());
+  viewport.html('Inner: ' + window.innerWidth + ' x ' + window.innerHeight + '<br>Outer: ' + window.outerWidth + ' x ' + window.outerHeight);
 
   if (!visible) {
     viewport.fadeIn();
