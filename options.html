@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Test Extension Options</title>
+	<style>body:{padding:10px;}.form-group{margin:0 2% 12px 2%; width:46%; float:left;}label{font-weight:bold; display:block; margin-bottom:4px;}#status{background-color:#8BC34A;visibility:hidden;position:absolute;padding-left:15px;border-radius:3px;line-height:30px;font-weight:bold;z-index:999;bottom:11px;color:#fff;width:88%;}#save{background:#7BB115;text-shadow:none;box-shadow:none;border:none;color:#fff;}#reset{background:#ADADAD;text-shadow:none;box-shadow:none;border:none;color:#fff;}#save:hover,#reset:hover{opacity:0.8;cursor:pointer;}</style>
+</head>
+<body>
+
+	<div class="form-group">
+		<label>Remain Open:</label>
+		<select id="remain_open" style="width:100%;">
+			<option value="1000">For 1 sec</option>
+			<option value="2000">For 2 sec</option>
+			<option value="3000">For 3 sec</option>
+			<option value="4000">For 4 sec</option>
+			<option value="5000">For 5 sec</option>
+			<option value="10000">For 10 sec</option>
+			<option value="15000">For 15 sec</option>
+			<option value="20000">For 20 sec</option>
+			<option value="30000">For 30 sec</option>
+			<option value="60000">For 1 min</option>
+		</select>
+	</div>
+	
+	<div class="form-group">
+		<label>Position:</label>
+		<select id="position" style="width:100%;">
+			<option value="top_left">Top Left</option>
+			<option value="top_right">Top Right</option>
+			<option value="bottom_right">Bottom Right</option>
+			<option value="bottom_left">Bottom Left</option>
+		</select>
+	</div>
+	
+	<div class="form-group">
+		<label>Background Color:</label>
+		<input type="color" id="bgcolor" style="width:97%;">
+	</div>
+
+	<div class="form-group">
+		<label>Font Color:</label>
+		<input type="color" id="txtcolor" style="width:97%;">
+	</div>
+	
+	<div class="form-group">
+		<label>Font Size:</label>
+		<select id="txtsize" style="width:100%;">
+			<option value="10px">10px</option>
+			<option value="12px">12px</option>
+			<option value="14px">14px</option>
+			<option value="18px">18px</option>
+			<option value="20px">20px</option>
+			<option value="22px">22px</option>
+			<option value="24px">24px</option>
+			<option value="26px">26px</option>
+			<option value="28px">28px</option>
+			<option value="30px">30px</option>
+			<option value="32px">32px</option>
+			<option value="34px">34px</option>
+			<option value="36px">36px</option>
+			<option value="38px">38px</option>
+			<option value="40px">40px</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label>Enable Inner Size:</label>
+		<input type="checkbox" id="inner_size">
+	</div>
+
+	<div class="form-group">
+		<label>Enable Outer Size:</label>
+		<input type="checkbox" id="outer_size">
+	</div>
+
+	<div id="status">asdf</div>
+	<button id="save">Save</button>
+	<button id="reset">Reset</button>
+
+	<script src="js/options.js"></script>
+</body>
+</html>
